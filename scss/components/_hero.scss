@@ -5,22 +5,33 @@
     margin-top: 80px;
     @include flex-center-center;
     flex-direction: column;
+    background-image: url('../img/ELECTROLUX3.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
 
     @media(min-width:1199px){
+        background-image: url('../img/electrolux-banner-princ.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        padding: 120px 0;
     }
 
 
     &__text{
+        width: 90%;
         background-color: $Meteorite;
-        padding:20px 20px 20px 20%;
-        width: 100%;
         @include flex-center-center;
         flex-direction: column;
+        padding: 20px;
 
         @media(min-width:1199px){ //*table
             @include flex-start-center;
+            padding:20px 20px 20px 20%;
         }
         
         h1{

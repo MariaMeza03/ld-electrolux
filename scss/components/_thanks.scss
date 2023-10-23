@@ -3,35 +3,39 @@
   height: 90vh;
   @include flex-center-center;
   flex-direction: column;
-  background-image:url('../img/fondo-gracias.webp');	
+  background-image:url('../img/fondo-electrolux-gracias.webp');	
   background-size:cover;
   background-position:center;
   background-repeat: no-repeat; 
 
   .container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @include flex-center-center;
+    flex-direction: column;
   }
 
-      h2{
-        color: $Bluish_Purple_two;
-        font-size: 20px;
+  &__text{
+    background-color: rgba(2,30,87,0.7);
+    padding: 30px 60px;
+
+    h2{
+        color: $white;
+        font-size: 25px;
         text-align: center;
         font-family: Segoe-Regular;
         font-weight: bold;
 
         @media(min-width:768px){
-            font-size: 25px;
+            font-size: 30px;
         }
 
         @media(min-width:1700px){
-            font-size: 30px;
+            font-size: 35px;
         }
     }
 
     p{
       padding-top: 15px;
-      color: $Meteorite;
+      color: $white;
       font-family: Segoe-Regular;
       font-size: 15px;
       text-align: center;
@@ -42,40 +46,39 @@
       }
     }
 
+  }
+
+
     &__button{
       @include flex-center-center;
       
       a{
-          border: 2px solid $Bluish_Purple;
+          border: 2px solid $Meteorite;
           margin-top: 30px;
-          background-color:$Bluish_Purple;
+          background-color:$white;
           font-family: Segoe-Bold;
           padding: 15px 30px ;
-          color:white;
+          color:$Meteorite;
           font-size: 15px;
-          border-radius: 28px;
           text-align: center;
 
           @media(min-width:300px){
-              font-size: 20px;         
+              font-size: 16px;         
           }
 
           @media(min-width:768px){
-              font-size: 25px;
+              font-size: 18px;
               
           }
       }
 
       a:hover{
-          background-color:$white ;
-          color: $Bluish_Purple;
-          border: 2px solid $Bluish_Purple;
+          background-color:$Meteorite ;
+          color: $white;
+          border: 2px solid $Meteorite;
       }
   }
 
-    a:hover{
-      background-color:$white ;
-      color: $Bluish_Purple;
-      border: 2px solid $Bluish_Purple;
-    }
+
 }
+
