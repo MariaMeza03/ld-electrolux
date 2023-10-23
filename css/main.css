@@ -705,7 +705,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 30px 0;
     border-radius: 20px;
     width: 100%; }
     .offer__content__title {
@@ -732,7 +731,7 @@
       @media (min-width: 1199px) {
         .offer__content__grid {
           display: grid;
-          padding: 30px 0 0 0; } }
+          padding: 0; } }
       @media (min-width: 1199px) {
         .offer__content__grid {
           gap: 30px; } }
@@ -769,7 +768,6 @@
                 width: auto; } }
     .offer__content__carrousel {
       width: 70%;
-      padding: 30px 0 0 0;
       margin: auto; }
       @media (min-width: 568px) {
         .offer__content__carrousel {
@@ -993,10 +991,6 @@
   padding: 30px 0 30px 0; }
   @media (min-width: 1199px) {
     .domestic {
-      background-image: url("../../img/banner-contacto-lg.webp");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
       height: auto;
       padding: 60px 0 60px 0; } }
   .domestic .container {
@@ -1011,27 +1005,18 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 30px; } }
   .domestic__text {
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding: 30px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, white -19px 17px 0px -4px, #A40033 -19px 17px;
-    border-radius: 5px; }
-    @media (min-width: 678px) {
-      .domestic__text {
-        width: 100%; } }
+    flex-direction: column; }
     @media (min-width: 1199px) {
       .domestic__text {
         display: flex;
         align-items: flex-start;
-        justify-content: center;
-        position: relative;
-        left: 55px; } }
+        justify-content: center; } }
     .domestic__text h1 {
-      color: #A40033;
+      color: #041E41;
       font-size: 20px;
       font-family: Segoe-Bold;
       text-align: center; }
@@ -1046,7 +1031,7 @@
           font-size: 35px; } }
     .domestic__text p {
       padding-top: 15px;
-      color: black;
+      color: #041E41;
       font-size: 15px;
       text-align: center; }
       @media (min-width: 1199px) {
@@ -1086,9 +1071,9 @@
         justify-content: center; }
         .domestic__text__inputs__input__button button {
           width: 100%;
-          border: 2px solid #A40033;
+          border: 2px solid #041E41;
           margin-top: 10px;
-          background-color: #A40033;
+          background-color: #041E41;
           font-family: Segoe-Bold;
           padding: 15px;
           color: white;
@@ -1099,8 +1084,8 @@
               font-size: 18px; } }
         .domestic__text__inputs__input__button button:hover {
           background-color: white;
-          color: #A40033;
-          border: 2px solid #A40033; }
+          color: #041E41;
+          border: 2px solid #041E41; }
   .domestic__imagen {
     display: flex;
     align-items: center;
@@ -1110,12 +1095,6 @@
     @media (min-width: 678px) {
       .domestic__imagen {
         width: 100%; } }
-    @media (min-width: 1199px) {
-      .domestic__imagen {
-        display: none;
-        width: 125%;
-        height: 100%;
-        height: auto; } }
 
 .form {
   width: 100%;

@@ -50,7 +50,6 @@
     &__content{
         @include flex-center-center;
         flex-direction: column;
-        padding: 30px 0;
         border-radius: 20px;
         width: 100%;
 
@@ -82,7 +81,7 @@
     
             @media(min-width: 1199px){
                 display: grid;
-                padding: 30px 0 0 0;
+                padding:  0;
             }
     
             @media(min-width: 1199px){
@@ -133,7 +132,6 @@
     
         &__carrousel{
             width: 70%;
-            padding: 30px 0 0 0;
             margin: auto;
 
             @media(min-width: 568px){
