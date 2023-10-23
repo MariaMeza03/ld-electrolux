@@ -712,24 +712,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: column; }
-      .offer__content__title h1 {
-        color: #A40033;
-        font-size: 20px;
-        text-align: center;
-        font-family: Segoe-Bold; }
-        @media (min-width: 768px) {
-          .offer__content__title h1 {
-            font-size: 25px; } }
-        @media (min-width: 1199px) {
-          .offer__content__title h1 {
-            font-size: 30px; } }
-        @media (min-width: 1700px) {
-          .offer__content__title h1 {
-            font-size: 35px; } }
+      flex-direction: column;
+      padding: 30px 0 15px 0; }
       .offer__content__title p {
         padding-top: 15px;
-        color: black;
+        color: #32236F;
         font-size: 15px;
         text-align: center; }
         @media (min-width: 1199px) {
@@ -739,7 +726,7 @@
     .offer__content__grid {
       width: 100%;
       padding: 30px 0;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 15px;
       display: none; }
       @media (min-width: 1199px) {
@@ -754,16 +741,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-direction: column;
-        background-color: #F6F6F6F6;
-        padding: 20px;
-        border-radius: 20px; }
+        flex-direction: column; }
         .offer__content__grid__item__text {
           width: 100%; }
           .offer__content__grid__item__text h1 {
             font-weight: normal;
             width: 100%;
-            color: #A40033;
+            color: #32236F;
             font-family: Segoe-Bold;
             font-size: 15px;
             text-align: center;
@@ -800,9 +784,6 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        background-color: #F6F6F6F6;
-        padding: 10px;
-        border-radius: 20px;
         height: auto; }
         @media (min-width: 992px) {
           .offer__content__carrousel__item {
@@ -812,7 +793,7 @@
           .offer__content__carrousel__item__text h1 {
             font-weight: normal;
             width: 100%;
-            color: #A40033;
+            color: #32236F;
             font-family: Segoe-Bold;
             font-size: 15px;
             text-align: center; }
@@ -840,9 +821,8 @@
         align-items: center;
         justify-content: flex-end; } }
     .offer__button a {
-      border: 2px solid #A40033;
-      margin-top: 15px;
-      background-color: #A40033;
+      border: 2px solid #041E41;
+      background-color: #041E41;
       font-family: Segoe-Bold;
       font-weight: bold;
       padding: 15px;
@@ -855,13 +835,10 @@
         .offer__button a {
           padding: 15px 80px;
           font-size: 18px; } }
-      @media (min-width: 1199px) {
-        .offer__button a {
-          margin-top: 30px; } }
     .offer__button a:hover {
       background-color: white;
-      color: #A40033;
-      border: 2px solid #A40033; }
+      color: #041E41;
+      border: 2px solid #041E41; }
 
 .swiper {
   width: 100%;

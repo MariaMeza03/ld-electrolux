@@ -57,29 +57,11 @@
         &__title{
             @include flex-center-center;
             flex-direction: column;
-
-            h1{
-                color: $Shiraz;
-                font-size: 20px;
-                text-align: center;
-                font-family: Segoe-Bold;
-                
-                @media(min-width:768px){
-                    font-size: 25px;
-                }
-        
-                @media(min-width:1199px){
-                    font-size: 30px;
-                }
-                
-                @media(min-width:1700px){
-                    font-size: 35px;
-                }
-            }
-
+            padding: 30px 0 15px 0;
+            
             p{
                 padding-top: 15px;
-                color: black;
+                color: $elephant;
                 font-size: 15px;
                 text-align: center;
         
@@ -94,7 +76,7 @@
         &__grid{
             width: 100%;
             padding: 30px 0;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 15px;
             display: none;
     
@@ -111,16 +93,13 @@
                 height: auto;
                 @include flex-center-between;
                 flex-direction: column;
-                background-color: $harp;
-                padding: 20px;
-                border-radius: 20px;
     
                 &__text{
                     width: 100%;    
                     h1{
                         font-weight: normal;
                         width: 100%;
-                        color: $Shiraz;
+                        color: $elephant;
                         font-family: Segoe-Bold;
                         font-size: 15px;
                         text-align: center;
@@ -170,9 +149,6 @@
                 width: 100%;
                 @include flex-center-between;
                 flex-direction: column;
-                background-color: $harp;
-                padding: 10px;
-                border-radius: 20px;
                 height: auto;
 
                 @media(min-width: 992px){
@@ -185,7 +161,7 @@
                     h1{
                         font-weight: normal;
                         width: 100%;
-                        color: $Shiraz;
+                        color: $elephant;
                         font-family: Segoe-Bold;
                         font-size: 15px;
                         text-align: center;
@@ -227,9 +203,8 @@
         }
 
         a{
-            border: 2px solid $Shiraz;
-            margin-top: 15px;
-            background-color:$Shiraz;
+            border: 2px solid $Meteorite;
+            background-color:$Meteorite;
             font-family: Segoe-Bold;
             font-weight: bold;
             padding: 15px;
@@ -245,17 +220,13 @@
                 font-size: 18px;
                 
             }
-
-            @media(min-width:1199px){
-                margin-top: 30px;
-            }
  
         }
 
         a:hover{
             background-color:$white ;
-            color: $Shiraz;
-            border: 2px solid $Shiraz;
+            color: $Meteorite;
+            border: 2px solid $Meteorite;
         }
     }
 
