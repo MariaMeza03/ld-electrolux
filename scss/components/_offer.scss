@@ -1,0 +1,295 @@
+.offer{
+    width: 100%;
+	position: relative;
+	height: auto;
+    padding: 30px 0 30px 0;
+
+    @media(min-width:1199px){
+        padding: 60px 0 60px 0;
+    }
+
+    .container{
+        @include flex-center-center;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+    &--prev{
+		position: absolute;
+        left: 15px;
+		top: 50%;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		z-index: 2;
+
+		svg{
+			width: 30px;
+			fill: black;
+		}
+
+	}
+
+	&--next{
+		position: absolute;
+        right: 15px;
+		top: 50%;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		z-index: 2;
+
+
+		svg{
+			width: 30px;
+			fill: black;
+		}
+
+	}
+
+    &__content{
+        @include flex-center-center;
+        flex-direction: column;
+        padding: 30px 0;
+        border-radius: 20px;
+        width: 100%;
+
+        &__title{
+            @include flex-center-center;
+            flex-direction: column;
+
+            h1{
+                color: $Shiraz;
+                font-size: 20px;
+                text-align: center;
+                font-family: Segoe-Bold;
+                
+                @media(min-width:768px){
+                    font-size: 25px;
+                }
+        
+                @media(min-width:1199px){
+                    font-size: 30px;
+                }
+                
+                @media(min-width:1700px){
+                    font-size: 35px;
+                }
+            }
+
+            p{
+                padding-top: 15px;
+                color: black;
+                font-size: 15px;
+                text-align: center;
+        
+                @media(min-width: 1199px){
+                    text-align: start;
+                    font-size: 18px;  
+                }
+            }
+    
+        }
+    
+        &__grid{
+            width: 100%;
+            padding: 30px 0;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            display: none;
+    
+            @media(min-width: 1199px){
+                display: grid;
+                padding: 30px 0 0 0;
+            }
+    
+            @media(min-width: 1199px){
+                gap: 30px;
+            }
+    
+            &__item{
+                height: auto;
+                @include flex-center-between;
+                flex-direction: column;
+                background-color: $harp;
+                padding: 20px;
+                border-radius: 20px;
+    
+                &__text{
+                    width: 100%;    
+                    h1{
+                        font-weight: normal;
+                        width: 100%;
+                        color: $Shiraz;
+                        font-family: Segoe-Bold;
+                        font-size: 15px;
+                        text-align: center;
+                        padding-top: 15px ;
+                
+                        @media(min-width: 1199px){
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                &__imagen{
+                    width: 217px;
+                    max-height:275px ;
+
+                    @media(min-width: 1400px){
+                        width: auto;
+                    }
+
+                    &--refri{
+                        width: 150px;
+                        max-height:275px ;
+
+                        @media(min-width: 1400px){
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    
+        &__carrousel{
+            width: 70%;
+            padding: 30px 0 0 0;
+            margin: auto;
+
+            @media(min-width: 568px){
+                width: 100%;
+            }
+
+            @media(min-width: 1199px){
+                display: none;
+            }
+    
+            &__item{
+                margin: 10px;
+                width: 100%;
+                @include flex-center-between;
+                flex-direction: column;
+                background-color: $harp;
+                padding: 10px;
+                border-radius: 20px;
+                height: auto;
+
+                @media(min-width: 992px){
+                    padding: 20px;
+                }
+    
+                &__text{
+                    width: 100%;
+    
+                    h1{
+                        font-weight: normal;
+                        width: 100%;
+                        color: $Shiraz;
+                        font-family: Segoe-Bold;
+                        font-size: 15px;
+                        text-align: center;
+
+                        @media(min-width: 678px){
+                            font-size: 16px;
+                        }
+                
+                        @media(min-width: 1199px){
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                &__imagen{
+                    width: 217px;
+                    max-height:275px ;
+                    margin-bottom: 40px;
+
+                    &--refri{
+                        margin-bottom: 40px;
+                        width: 150px;
+                        max-height:275px ;
+                    }
+                    
+                    
+                }
+            }
+    
+        }
+        
+    }
+
+    &__button{
+        @include flex-center-center;
+
+        @media(min-width:1199px){
+            @include flex-center-end;
+        }
+
+        a{
+            border: 2px solid $Shiraz;
+            margin-top: 15px;
+            background-color:$Shiraz;
+            font-family: Segoe-Bold;
+            font-weight: bold;
+            padding: 15px;
+            color:$white;
+            text-align: center;
+
+            @media(min-width:300px){
+                font-size: 15px;         
+            }
+
+            @media(min-width:768px){
+                padding: 15px 80px ;
+                font-size: 18px;
+                
+            }
+
+            @media(min-width:1199px){
+                margin-top: 30px;
+            }
+ 
+        }
+
+        a:hover{
+            background-color:$white ;
+            color: $Shiraz;
+            border: 2px solid $Shiraz;
+        }
+    }
+
+    
+
+}
+
+.swiper{
+	width: 100%;
+    margin: auto;
+    overflow: hidden;
+
+		.swiper-slide{
+            width: 100% !important;
+            height: 100%;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center; 
+            @include flex-center-center;
+
+            @media(min-width: 568px){
+                width: 50% !important;
+            }
+
+
+		}
+
+        
+
+}

@@ -1,0 +1,135 @@
+.the_best{
+    width: 100%;
+	position: relative;
+	height: auto;
+    padding: 30px 0 30px 0;
+    
+
+    @media(min-width:1199px){
+        padding: 60px 0 60px 0;
+    }
+
+    .container{
+        @include flex-center-center;
+        flex-direction: column;     
+        
+    }
+
+    &__title{
+        @include flex-center-center;
+        flex-direction: column;
+        padding-bottom: 30px;
+
+        h1{
+            color: $Shiraz;
+            font-size: 20px;
+            text-align: center;
+            font-family: Segoe-Bold;
+            
+            @media(min-width:768px){
+                font-size: 25px;
+            }
+    
+            @media(min-width:1199px){
+                font-size: 30px;
+            }
+            
+            @media(min-width:1700px){
+                font-size: 35px;
+            }
+        }
+
+        p{
+            padding-top: 15px;
+            color: black;
+            font-size: 15px;
+            text-align: center;
+    
+            @media(min-width: 1199px){
+                text-align: start;
+                font-size: 18px;  
+            }
+        }
+
+    }
+
+    &__content{
+        padding: 30px;
+        @include flex-center-center;
+        flex-direction: column;  
+        background-image: url('../../img/banner-guinda.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+
+        @media(min-width:1199px){
+             padding: 60px;
+        }
+
+
+        &__grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 15px;
+            
+            @media(min-width: 750px){
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+                
+            }
+    
+            &__item{
+                @include flex-center-center;
+                flex-direction: column;
+                gap: 15px;
+    
+                &__imagen{
+                    height: 91px;
+                    margin: auto;
+    
+                    @media(min-width: 768px){
+                        @include flex-center-center;
+                        margin: 0;
+                    }
+                }
+            
+                &__text{
+                    @include flex-center-center;
+                    flex-direction:column;
+                    gap: 15px;
+        
+                    h1{
+                        color: $white;
+                        font-size: 20px;
+                        text-align: center;
+                        font-family: Segoe-Bold;
+                
+                        @media(min-width:1199px){
+                            font-size: 25px;
+                        }
+        
+                    }
+    
+                    p{
+                        text-align: center;
+                        color: $white;
+                        font-size: 15px;
+                        padding: 3px;
+                        
+                
+                        @media(min-width: 1199px){
+                            font-size: 18px;
+                        }
+                    }
+        
+                    span{
+                        font-family: Segoe-Bold;
+                    }
+                }
+            }
+        }
+
+    }
+    
+}

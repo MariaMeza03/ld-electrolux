@@ -1,0 +1,121 @@
+.services{
+    width: 100%;
+	position: relative;
+	height: auto;
+    padding: 30px 0 30px 0;
+
+    @media(min-width:1199px){
+        padding: 60px 0 60px 0;
+    }
+
+    .container{
+        @include flex-center-center;
+        flex-direction: column;     
+    }
+
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        
+        @media(min-width: 750px){
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            
+        }
+
+        &__item{
+            @include flex-center-center;
+            flex-direction: column;
+            gap: 15px;
+
+            &__imagen{
+                height: 91px;
+                margin: auto;
+
+                @media(min-width: 768px){
+                    @include flex-center-center;
+                    margin: 0;
+                }
+            }
+        
+            &__text{
+                @include flex-center-center;
+                flex-direction:column;
+                gap: 15px;
+    
+                h1{
+                    color: $black;
+                    font-size: 20px;
+                    text-align: center;
+                    font-family: Segoe-Bold;
+            
+                    @media(min-width:1199px){
+                        font-size: 25px;
+                    }
+    
+                }
+
+                p{
+                    text-align: center;
+                    color: $black;
+                    font-size: 15px;
+                    padding: 3px;
+                    
+            
+                    @media(min-width: 1199px){
+                        font-size: 18px;
+                    }
+                }
+    
+                span{
+                    font-family: Segoe-Bold;
+                }
+            }
+        }
+    }
+
+    &__button{
+        @include flex-center-center;
+
+        @media(min-width:1199px){
+            @include flex-center-end;
+        }
+
+        a{
+            border: 2px solid $Shiraz;
+            margin-top: 30px;
+            background-color:$Shiraz;
+            font-family: Segoe-Bold;
+            font-weight: bold;
+            padding: 15px;
+            color:$white;
+            text-align: center;
+
+            @media(min-width:300px){
+                font-size: 16px;         
+            }
+
+            @media(min-width:768px){
+                padding: 15px 80px ;
+                font-size: 18px;
+                
+            }
+
+            @media(min-width:1199px){
+                margin-top: 60px;
+            }
+ 
+        }
+
+        a:hover{
+            background-color:$white ;
+            color: $Shiraz;
+            border: 2px solid $Shiraz;
+        }
+    }
+
+    
+
+}

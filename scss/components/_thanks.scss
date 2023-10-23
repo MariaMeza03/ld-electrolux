@@ -1,0 +1,81 @@
+.thanks {
+  width: 100%;
+  height: 90vh;
+  @include flex-center-center;
+  flex-direction: column;
+  background-image:url('../img/fondo-gracias.webp');	
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat; 
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+      h2{
+        color: $Bluish_Purple_two;
+        font-size: 20px;
+        text-align: center;
+        font-family: Segoe-Regular;
+        font-weight: bold;
+
+        @media(min-width:768px){
+            font-size: 25px;
+        }
+
+        @media(min-width:1700px){
+            font-size: 30px;
+        }
+    }
+
+    p{
+      padding-top: 15px;
+      color: $Meteorite;
+      font-family: Segoe-Regular;
+      font-size: 15px;
+      text-align: center;
+
+      @media(min-width: 1199px){
+          font-size: 18px;
+          padding-top: 20px;
+      }
+    }
+
+    &__button{
+      @include flex-center-center;
+      
+      a{
+          border: 2px solid $Bluish_Purple;
+          margin-top: 30px;
+          background-color:$Bluish_Purple;
+          font-family: Segoe-Bold;
+          padding: 15px 30px ;
+          color:white;
+          font-size: 15px;
+          border-radius: 28px;
+          text-align: center;
+
+          @media(min-width:300px){
+              font-size: 20px;         
+          }
+
+          @media(min-width:768px){
+              font-size: 25px;
+              
+          }
+      }
+
+      a:hover{
+          background-color:$white ;
+          color: $Bluish_Purple;
+          border: 2px solid $Bluish_Purple;
+      }
+  }
+
+    a:hover{
+      background-color:$white ;
+      color: $Bluish_Purple;
+      border: 2px solid $Bluish_Purple;
+    }
+}

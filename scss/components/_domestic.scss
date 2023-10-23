@@ -1,0 +1,170 @@
+.domestic{
+    width: 100%;
+	position: relative;
+	height: auto;
+    /*margin-top: 80px;*/
+    @include flex-center-center;
+    padding: 30px 0 30px 0;
+    
+
+    @media(min-width:1199px){
+        background-image: url('../../img/banner-contacto-lg.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        padding: 60px 0 60px 0;
+    }
+
+
+    .container{
+        @include flex-center-center;
+        flex-direction: column-reverse;
+        gap: 15px;
+
+        @media(min-width:1199px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+		}
+    }
+
+    &__text{
+        width: 90%;
+        @include flex-center-center;
+        flex-direction: column;
+        padding: 30px;
+        background-color: $white;
+        box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px, white -19px 17px 0px -4px, $Shiraz -19px 17px;
+        border-radius: 5px;
+
+        @media(min-width:678px){
+            width: 100%;
+        }
+
+        @media(min-width:1199px){ //*table
+            @include flex-start-center;
+            position: relative;
+            left: 55px;
+        }
+        
+        h1{
+            color: $Shiraz;
+            font-size: 20px;
+            font-family: Segoe-Bold;
+            text-align: center;
+            
+            @media(min-width:768px){
+                font-size: 25px;
+            }
+    
+            @media(min-width:1199px){
+                font-size: 30px;
+            }
+            
+            @media(min-width:1700px){
+                font-size: 35px;
+            }
+        }
+
+        p{
+            padding-top: 15px;
+            color: $black;
+            font-size: 15px;
+            text-align: center;
+
+            @media(min-width: 1199px){
+                text-align: start;
+                font-size: 18px;  
+            }
+        }
+
+        &__inputs{
+            width: 100%;
+            
+            &__input{
+                @media(min-width:1199px){
+                    padding:7.5px 0;
+                }
+
+                label{
+                    color: $black;
+                    font-family:Segoe-Bold;
+                    font-size: 15px;
+        
+                    @media(min-width: 1199px){
+                        font-size: 18px;
+                    }
+                }
+    
+                input{
+                    width: 100%;
+                    padding: 15px;
+                    background-color: $harp;
+                    border: none;
+                    border-radius: 7px;
+                    margin-top: 10px;
+                }
+                
+                textarea{
+                    height: 200px;
+                    padding: 15px;
+                    background-color: $harp;
+                    border: none;
+                    border-radius: 7px;
+                    margin-top: 10px;
+                }
+
+                &__button{
+                    width: 100%;
+                    @include flex-center-center;
+
+                    button{
+                        width: 100%;
+                        border: 2px solid $Shiraz;
+                        margin-top: 10px;
+                        background-color:$Shiraz;
+                        font-family: Segoe-Bold;
+                        padding: 15px ;
+                        color:$white;
+                        font-size: 15px;
+                        text-align: center;
+
+                        @media(min-width: 1199px){
+                            font-size: 18px;
+                        }
+                    }
+            
+                    button:hover{
+                        background-color:$white ;
+                        color: $Shiraz;
+                        border: 2px solid $Shiraz;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+    &__imagen{
+        @include flex-center-start;
+        margin: auto;
+        width: 90%;
+
+        @media(min-width:678px){
+            width: 100%;
+        }
+
+
+        @media(min-width: 1199px){
+            display: none;
+            width: 125%;
+            height: 100%;
+            height:auto;
+        }
+    }
+
+
+} 

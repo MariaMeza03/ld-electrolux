@@ -1,0 +1,140 @@
+.hero{
+    width: 100%;
+	position: relative;
+	height: auto;
+    margin-top: 80px;
+   @include flex-center-center;
+
+
+
+    .container{
+        @include flex-center-center;
+        flex-direction: column;
+
+        @media(min-width:1199px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+		}
+    }
+
+    &__text{
+        width: 100%;
+        @include flex-center-center;
+        flex-direction: column;
+
+        @media(min-width:1199px){ //*table
+            @include flex-end-center;
+        }
+        
+        h1{
+            color: $black;
+            font-size: 25px;
+            font-weight:bold;
+            text-align: center;
+            font-family: Segoe-Bold;
+            line-height: 32px;
+
+            @media(min-width:768px){ //*phone
+                font-size: 45px;
+                line-height:50px;
+            }
+
+            @media(min-width:1199px){ //*table
+                text-align: start;
+                font-size: 60px;
+            }
+
+            @media(min-width:1700px){//*Desktop
+                line-height: 72px;
+                font-size: 66px;
+            }
+        }
+
+        span{
+            font-size: 25px;
+            font-weight:bold;
+            text-align: center;
+            font-family: Segoe-Bold;
+            line-height: 32px;
+
+            @media(min-width:768px){ //*phone
+                font-size: 45px;
+                line-height:50px;
+            }
+
+            @media(min-width:1199px){ //*table
+                text-align: start;
+                font-size: 60px;
+            }
+
+            @media(min-width:1700px){//*Desktop
+                line-height: 72px;
+                font-size: 66px;
+            }
+            
+            color: $Shiraz;
+        }
+
+        p{
+            padding-top: 25px;
+            color: $black;
+            font-size: 20px;
+            text-align: center;
+            line-height: 25px;
+            
+            @media(min-width:768px){
+                font-size: 25px;
+                line-height: 32px;
+            }
+            @media(min-width:1199px){ //*table
+                text-align: end;
+            }
+        }
+
+        &__button{
+            width: 100%;
+            @include flex-center-center;
+
+            @media(min-width:1199px){
+                @include flex-center-start;
+            }
+
+            a{
+                width: 100%;
+                border: 2px solid $Shiraz;
+                margin-top: 30px;
+                background-color:$Shiraz;
+                font-family: Segoe-Bold;
+                padding: 20px 30px ;
+                color:white;
+                font-size: 15px;
+                text-align: center;
+
+                @media(min-width:300px){
+                    font-size: 16px;         
+                }
+    
+                @media(min-width:768px){
+                    font-size: 18px;
+                    
+                }
+            }
+
+            a:hover{
+                background-color:$white ;
+                color: $Shiraz;
+                border: 2px solid $Shiraz;
+            }
+        }
+    }
+
+    &__imagen{
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        @include flex-center-start;
+    }
+
+} 
