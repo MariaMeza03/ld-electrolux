@@ -21,10 +21,11 @@
         padding-bottom: 30px;
 
         h1{
-            color: $Shiraz;
+            color: $white;
             font-size: 20px;
             text-align: center;
             font-family: Segoe-Bold;
+            padding-bottom: 15px;
             
             @media(min-width:768px){
                 font-size: 25px;
@@ -32,22 +33,11 @@
     
             @media(min-width:1199px){
                 font-size: 30px;
+                padding-bottom: 30px;
             }
             
             @media(min-width:1700px){
                 font-size: 35px;
-            }
-        }
-
-        p{
-            padding-top: 15px;
-            color: black;
-            font-size: 15px;
-            text-align: center;
-    
-            @media(min-width: 1199px){
-                text-align: start;
-                font-size: 18px;  
             }
         }
 
@@ -68,13 +58,41 @@
         }
 
 
-        &__grid{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 15px;
+        h1.title{
+            color: $white;
+            font-size: 20px;
+            text-align: center;
+            font-family: Segoe-Bold;
+            padding-bottom: 15px;
             
-            @media(min-width: 750px){
+            @media(min-width:768px){
+                font-size: 25px;
+            }
+    
+            @media(min-width:1199px){
+                font-size: 30px;
+                padding-bottom: 30px;
+            }
+            
+            @media(min-width:1700px){
+                font-size: 35px;
+            }
+        }
+
+        &__grid{
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+
+            @media(min-width: 678px){
                 grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+                
+            }
+            
+            @media(min-width: 1199px){
+                grid-template-columns: repeat(6, 1fr);
                 gap: 30px;
                 
             }

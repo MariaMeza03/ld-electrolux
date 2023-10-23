@@ -3,31 +3,28 @@
 	position: relative;
 	height: auto;
     margin-top: 80px;
-   @include flex-center-center;
+    @include flex-center-center;
+    flex-direction: column;
 
-
-
-    .container{
-        @include flex-center-center;
-        flex-direction: column;
-
-        @media(min-width:1199px){
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-		}
+    @media(min-width:1199px){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
+
     &__text{
+        background-color: $Meteorite;
+        padding:20px 20px 20px 20%;
         width: 100%;
         @include flex-center-center;
         flex-direction: column;
 
         @media(min-width:1199px){ //*table
-            @include flex-end-center;
+            @include flex-start-center;
         }
         
         h1{
-            color: $black;
+            color: $white;
             font-size: 25px;
             font-weight:bold;
             text-align: center;
@@ -72,12 +69,12 @@
                 font-size: 66px;
             }
             
-            color: $Shiraz;
+            color: $white;
         }
 
         p{
             padding-top: 25px;
-            color: $black;
+            color: $white;
             font-size: 20px;
             text-align: center;
             line-height: 25px;
@@ -87,7 +84,7 @@
                 line-height: 32px;
             }
             @media(min-width:1199px){ //*table
-                text-align: end;
+                text-align: start;
             }
         }
 
@@ -101,14 +98,15 @@
 
             a{
                 width: 100%;
-                border: 2px solid $Shiraz;
+                border: 2px solid $Meteorite;
                 margin-top: 30px;
-                background-color:$Shiraz;
+                background-color:$white;
                 font-family: Segoe-Bold;
                 padding: 20px 30px ;
-                color:white;
+                color:$Meteorite;
                 font-size: 15px;
                 text-align: center;
+                border-radius: 20px;
 
                 @media(min-width:300px){
                     font-size: 16px;         
@@ -122,8 +120,8 @@
 
             a:hover{
                 background-color:$white ;
-                color: $Shiraz;
-                border: 2px solid $Shiraz;
+                color:$Meteorite;
+                border: 2px solid $Meteorite;
             }
         }
     }
