@@ -23,6 +23,7 @@
         padding-bottom: 15px;
         
         @media(min-width:768px){
+            text-align: start;
             font-size: 25px;
         }
 
@@ -62,7 +63,6 @@
     &__text{
         @include flex-center-center;
         flex-direction: column;
-        padding: 0 15px;
 
         &__button{
 

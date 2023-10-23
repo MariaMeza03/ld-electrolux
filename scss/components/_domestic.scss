@@ -137,9 +137,9 @@
     &__imagen{
         @include flex-center-start;
         margin: auto;
-        width: 90%;
+        width: 70%;
 
-        @media(min-width:678px){
+        @media(min-width:992px){
             width: 100%;
         }
     }
