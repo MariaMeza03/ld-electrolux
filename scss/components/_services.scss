@@ -52,7 +52,7 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 15px;
 
-        @media(min-width: 678px){
+        @media(min-width: 599px){
             grid-template-columns: repeat(2, 1fr);
             gap: 30px;
             
@@ -70,10 +70,11 @@
             gap: 15px;
 
             &__imagen{
-                height: 216px;
+                max-height: 150px;
                 margin: auto;
 
                 @media(min-width: 768px){
+                    height: 216px;
                     @include flex-center-center;
                     margin: 0;
                 }

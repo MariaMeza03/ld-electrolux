@@ -44,6 +44,7 @@
     }
 
     &__content{
+        width: 100%;
         padding: 30px;
         @include flex-center-center;
         flex-direction: column;  
@@ -83,17 +84,15 @@
             padding-top: 20px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
+            gap: 30px;
 
             @media(min-width: 678px){
                 grid-template-columns: repeat(3, 1fr);
-                gap: 30px;
                 
             }
             
             @media(min-width: 1199px){
                 grid-template-columns: repeat(6, 1fr);
-                gap: 30px;
                 
             }
     
@@ -103,10 +102,11 @@
                 gap: 15px;
     
                 &__imagen{
-                    height: 91px;
+                    height: 70px;
                     margin: auto;
     
                     @media(min-width: 768px){
+                        height: 91px;
                         @include flex-center-center;
                         margin: 0;
                     }
@@ -119,12 +119,12 @@
         
                     h1{
                         color: $white;
-                        font-size: 20px;
+                        font-size: 15px;
                         text-align: center;
                         font-family: Segoe-Bold;
                 
                         @media(min-width:1199px){
-                            font-size: 25px;
+                            font-size: 18px;
                         }
         
                     }
