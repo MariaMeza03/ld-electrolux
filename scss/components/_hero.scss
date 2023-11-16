@@ -31,7 +31,7 @@
 
         @media(min-width:1199px){ //*table
             @include flex-start-center;
-            padding:20px 20px 20px 20%;
+            padding:52px 74px 52px 20%;
         }
         
         h1{
@@ -49,12 +49,11 @@
 
             @media(min-width:1199px){ //*table
                 text-align: start;
-                font-size: 60px;
             }
 
             @media(min-width:1700px){//*Desktop
                 line-height: 72px;
-                font-size: 66px;
+                font-size: 60px;
             }
         }
 

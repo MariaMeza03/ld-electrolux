@@ -308,7 +308,7 @@
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        padding: 20px 20px 20px 20%; } }
+        padding: 52px 74px 52px 20%; } }
     .hero__text h1 {
       color: white;
       font-size: 25px;
@@ -322,12 +322,11 @@
           line-height: 50px; } }
       @media (min-width: 1199px) {
         .hero__text h1 {
-          text-align: start;
-          font-size: 60px; } }
+          text-align: start; } }
       @media (min-width: 1700px) {
         .hero__text h1 {
           line-height: 72px;
-          font-size: 66px; } }
+          font-size: 60px; } }
     .hero__text span {
       font-size: 25px;
       font-weight: bold;
