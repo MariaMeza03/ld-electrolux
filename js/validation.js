@@ -14,7 +14,7 @@ function ValidationContact(e) {
 	fetch('./correo.php', peticionContact)
 	.then(respuesta => respuesta.json)
 	.then(respuesta =>{
-		location.replace('./thanks.html');
+		location.replace('./gracias.html');
 	}).catch(error => console.log('error' , error));
 	
  }  
